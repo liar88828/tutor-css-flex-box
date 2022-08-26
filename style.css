@@ -22,7 +22,7 @@ body {
     /* align-items: end; untuk menggeser kotak di bawah */
 
 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* memnuat kotak feksibel menyesuaikan dengan layar broser */
 }
 
@@ -45,13 +45,17 @@ body {
 
 .item:nth-last-of-type(3) {
     /* align-self: center; */
+    order: 2;
+    /* order: 2; akan mengubah posisi urutan kotak yang diinginkan */
 }
 
 .item:nth-last-of-type(2) {
     /* align-self: start; */
+    order: 1;
 }
 
 .item:nth-last-of-type(1) {
     /* align-self: end; */
+    order: 3;
 
 }
