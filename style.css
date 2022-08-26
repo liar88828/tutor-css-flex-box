@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container {
+    /* display: flex; */
+    background-color: aquamarine;
+}
+
+
+.flex-container::after{ 
+    /* untuk me mperlihatkan background */
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: antiquewhite;
+    margin: 10px;
+    float: left;
+}
