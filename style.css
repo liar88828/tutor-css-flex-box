@@ -9,17 +9,29 @@ body {
 }
 
 .flex-container {
-    /* display: flex; */
+    height: 200px;
+    /* untuk memperlebar tinggi container */
+    display: flex;
     background-color: aquamarine;
+    justify-content: space-between;
+    /* justify-content: end; untuk menggeser kotak dikanan */
+    align-items: center;
+    /* align-items: end; untuk menggeser kotak di bawah */
+}
+
+.item:nth-last-of-type(3) {
+    align-self: center;
+}
+
+.item:nth-last-of-type(2) {
+    align-self: start;
+}
+
+.item:nth-last-of-type(1) {
+    align-self: end;
 }
 
 
-.flex-container::after{ 
-    /* untuk me mperlihatkan background */
-    content: '';
-    clear: both;
-    display: block;
-}
 
 .item {
     width: 100px;
