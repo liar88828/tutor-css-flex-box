@@ -9,33 +9,37 @@ body {
 }
 
 .flex-container {
-    height: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; untuk membuat kotak menjadi tersusun atas ke bawah */
+    /* flex-direction: row-reverse; untuk mengubah nilai posisi kotak */
     /* untuk memperlebar tinggi container */
     display: flex;
     background-color: aquamarine;
-    justify-content: space-between;
+    justify-content: end;
     /* justify-content: end; untuk menggeser kotak dikanan */
-    align-items: center;
+    align-items: start;
     /* align-items: end; untuk menggeser kotak di bawah */
 }
 
 .item:nth-last-of-type(3) {
-    align-self: center;
+    /* align-self: center; */
 }
 
 .item:nth-last-of-type(2) {
-    align-self: start;
+    /* align-self: start; */
 }
 
 .item:nth-last-of-type(1) {
-    align-self: end;
+    /* align-self: end; */
 }
 
 
 
 .item {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background: blue;
     color: antiquewhite;
     margin: 10px;
