@@ -29,10 +29,11 @@ body {
 
 
 .item {
-    flex-basis: 100px;
+    flex: 1 0 100px;
+    /* flex-basis: 300px; */
     /* flex-grow: 1; */
     /* flex-grow: 1; akan menyesuaikan ukuran layar broser pada saat di ubah*/
-    width: 100px;
+    /* width: 100px; */
     height: 100px;
     background: blue;
     color: antiquewhite;
@@ -47,6 +48,7 @@ body {
 }
 
 .item:nth-last-of-type(3) {
+    /* flex-shrink: 1; */
     /* flex-grow: 2; */
 
     /* align-self: center; */
@@ -55,6 +57,7 @@ body {
 }
 
 .item:nth-last-of-type(2) {
+    /* flex-shrink: 2; */
     /* flex-grow: 1; */
     /* flex-basis: 200px; */
     /* untuk memanjangkan kotak sesuai yang diinginkan syarat harus mengisi nilai parent(parent{flex-basis: 100px; dan nth-last-type{flex-basis: 200px;}) */
@@ -62,6 +65,7 @@ body {
 }
 
 .item:nth-last-of-type(1) {
+    /* flex-shrink: 3; */
     /* flex-grow: 3; */
     /*flex-grow: 3; untuk memberi nilai besar pada 1 kotak 
    nilai yang berbeda pada setiap kotak akan diberikan ukuran yang berbeda pula di setiap kotak  */
