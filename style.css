@@ -29,7 +29,7 @@ body {
 
 
 .item {
-    flex: 1 0 100px;
+    flex: 1;
     /* flex-basis: 300px; */
     /* flex-grow: 1; */
     /* flex-grow: 1; akan menyesuaikan ukuran layar broser pada saat di ubah*/
@@ -38,7 +38,7 @@ body {
     background: blue;
     color: antiquewhite;
     margin: 10px;
-    float: left;
+    /* float: left; */
 
     display: flex;
     justify-content: center;
